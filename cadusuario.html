@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar - Micael Soares - INF261</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            height: 80%;
+            background-color: rgb(210, 217, 236);
+        }
+        .img{
+            margin-left: 6%;
+            margin-bottom: 15%;
+            flex: 1;
+        }
+
+        .formulario {
+            margin-top: 4%;
+            margin-right: 10%;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 7px;
+            padding: 40px;
+            gap: 5px;
+        }
+        
+        .input{
+            padding: 10px;
+            border-radius: 5px;
+            border-color: blueviolet;
+        }
+        .btn{
+            background-color: royalblue;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+        header{
+            overflow: hidden;
+            background-color: #c7c5eedf;
+            padding: 15px 10px;
+        }
+        header a{
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+        header a.logo{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        header .a:hover {
+            background-color: #bdbbe1;
+            color: black;
+        }
+        header .a.active {
+            color: rgb(255, 255, 255);
+            background-color: blueviolet;
+        }
+        .header-right{
+            float: right;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Tênis de Mesa</a>
+        <div class="header-right">
+            <a class="a" href="index.html">Início</a>
+            <a href="login.html" class="a">Login</a>
+            <a href="cadusuario.html" class="active a">Registrar</a>
+        </div>
+    </header>
+    <section class="box">
+        <div class="img">
+            <img src="img/tenisdemesa.png" width="80%" alt="arte de tenis de mesa">
+        </div>
+        <form method="POST" class="formulario">
+            <h1>Registrar</h1>
+            <p>Digite os seus dados de acesso nos campos abaixo.</p>
+            <label for="nome">Nome</label>
+            <input type="nome" id="nome" name="nome" class="input" placeholder="Nome">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" class="input" autofocus="true">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" class="input" placeholder="Senha">
+            <label for="dia">Dia:</label>
+            <select name="dia" id="dia" style="padding: 8px; border-radius: 5px; border-color: blueviolet;">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>              
+            <label for="mes">Mês:</label>
+            <select name="mes" id="mes" style="padding: 8px; border-radius: 5px; border-color: blueviolet;">
+                <option value="Janeiro">Janeiro</option>
+                <option value="Fevereiro">Fevereiro</option>
+                <option value="Março">Março</option>
+                <option value="Abril">Abril</option>
+                <option value="Maio">Maio</option>
+                <option value="Junho">Junho</option>
+                <option value="Julho">Julho</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Setembro">Setembro</option>
+                <option value="Outubro">Outubro</option>
+                <option value="Novembro">Novembro</option>
+                <option value="Dezembro">Dezembro</option>
+            </select>
+              
+            <label for="ano">Ano:</label>
+            <select name="ano" id="ano" style="padding: 8px; border-radius: 5px; border-color: blueviolet;">
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>              
+            <div>
+                <p>Sexo:</p>
+                <input type="radio" name="sexo" id="Masculino" value="M"><label for="Masculino">Masculino</label>
+                <input type="radio" name="sexo" id="Feminino" value="F"><label for="Feminino">Feminino</label>
+                <br>
+                <p>Modalidade:</p>
+                <input type="checkbox" name="solo" id="solo"><label for="solo">Solo</label>
+                <input type="checkbox" name="dupla" id="dupla"><label for="dupla">Dupla</label>
+            </div>
+            <a href="login.html" style="text-decoration: none; color: rgb(0, 17, 255);">Já tem uma conta?</a>
+            <input type="submit" value="Acessar" class="btn">
+            <input type="reset" value="Limpar" class="btn">
+        </form>
+    </section>
+</body>
+</html>
